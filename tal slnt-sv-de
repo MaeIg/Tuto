@@ -1,0 +1,74 @@
+[33mcommit f1a281fb1a97126acc452d583d31ab37f87e0fb9[m
+Author: MaeIg <larochmael@hotmail.fr>
+Date:   Wed Jan 27 18:09:03 2021 +0100
+
+    Add helloWorld with TypeScript
+
+:100644 100644 08d25c9... 86961dc... M	App.tsx
+
+[33mcommit 726c700e4cebe0b7bd09c9346eb21d4c023c673c[m
+Author: MaeIg <larochmael@hotmail.fr>
+Date:   Mon Jan 18 16:28:13 2021 +0100
+
+    init
+
+:000000 100644 0000000... 934256c... A	.buckconfig
+:000000 100644 0000000... 40c6dcd... A	.eslintrc.js
+:000000 100644 0000000... d42ff18... A	.gitattributes
+:000000 100644 0000000... 6a5e410... A	.gitignore
+:000000 100644 0000000... 5c4de1a... A	.prettierrc.js
+:000000 100644 0000000... 9e26dfe... A	.watchmanconfig
+:000000 100644 0000000... 08d25c9... A	App.tsx
+:000000 100644 0000000... 2b71fbb... A	README.md
+:000000 100644 0000000... 1784766... A	__tests__/App-test.tsx
+:000000 100644 0000000... 94bffa4... A	android/app/_BUCK
+:000000 100644 0000000... 5f1d11a... A	android/app/build.gradle
+:000000 100644 0000000... fff270f... A	android/app/build_defs.bzl
+:000000 100644 0000000... 364e105... A	android/app/debug.keystore
+:000000 100644 0000000... 11b0257... A	android/app/proguard-rules.pro
+:000000 100644 0000000... fa26aa5... A	android/app/src/debug/AndroidManifest.xml
+:000000 100644 0000000... f4f5bcb... A	android/app/src/debug/java/com/tuto/ReactNativeFlipper.java
+:000000 100644 0000000... c4eaa70... A	android/app/src/main/AndroidManifest.xml
+:000000 100644 0000000... e63eb50... A	android/app/src/main/java/com/tuto/MainActivity.java
+:000000 100644 0000000... d931538... A	android/app/src/main/java/com/tuto/MainApplication.java
+:000000 100644 0000000... a2f5908... A	android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+:000000 100644 0000000... 1b52399... A	android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+:000000 100644 0000000... ff10afd... A	android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+:000000 100644 0000000... 115a4c7... A	android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+:000000 100644 0000000... dcd3cd8... A	android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+:000000 100644 0000000... 459ca60... A	android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+:000000 100644 0000000... 8ca12fe... A	android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+:000000 100644 0000000... 8e19b41... A	android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+:000000 100644 0000000... b824ebd... A	android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+:000000 100644 0000000... 4c19a13... A	android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+:000000 100644 0000000... d8921fa... A	android/app/src/main/res/values/strings.xml
+:000000 100644 0000000... 62fe59f... A	android/app/src/main/res/values/styles.xml
+:000000 100644 0000000... ed5a568... A	android/build.gradle
+:000000 100644 0000000... 3bdbd3d... A	android/gradle.properties
+:000000 100644 0000000... 5c2d1cf... A	android/gradle/wrapper/gradle-wrapper.jar
+:000000 100644 0000000... 8422670... A	android/gradle/wrapper/gradle-wrapper.properties
+:000000 100644 0000000... 2fe81a7... A	android/gradlew
+:000000 100644 0000000... 62bd9b9... A	android/gradlew.bat
+:000000 100644 0000000... ddf012a... A	android/settings.gradle
+:000000 100644 0000000... 3cc69e1... A	app.json
+:000000 100644 0000000... f842b77... A	babel.config.js
+:000000 100644 0000000... a850d03... A	index.js
+:000000 100644 0000000... d1e5a0c... A	ios/Podfile
+:000000 100644 0000000... ecbd496... A	ios/Tuto-tvOS/Info.plist
+:000000 100644 0000000... ba72822... A	ios/Tuto-tvOSTests/Info.plist
+:000000 100644 0000000... 2fb29b2... A	ios/Tuto.xcodeproj/project.pbxproj
+:000000 100644 0000000... b9ace61... A	ios/Tuto.xcodeproj/xcshareddata/xcschemes/Tuto-tvOS.xcscheme
+:000000 100644 0000000... 0ab8ac8... A	ios/Tuto.xcodeproj/xcshareddata/xcschemes/Tuto.xcscheme
+:000000 100644 0000000... ef1de86... A	ios/Tuto/AppDelegate.h
+:000000 100644 0000000... 0f3a76f... A	ios/Tuto/AppDelegate.m
+:000000 100644 0000000... 118c98f... A	ios/Tuto/Images.xcassets/AppIcon.appiconset/Contents.json
+:000000 100644 0000000... 2d92bd5... A	ios/Tuto/Images.xcassets/Contents.json
+:000000 100644 0000000... f053ad5... A	ios/Tuto/Info.plist
+:000000 100644 0000000... e314a53... A	ios/Tuto/LaunchScreen.storyboard
+:000000 100644 0000000... b1df44b... A	ios/Tuto/main.m
+:000000 100644 0000000... ba72822... A	ios/TutoTests/Info.plist
+:000000 100644 0000000... 2791ad6... A	ios/TutoTests/TutoTests.m
+:000000 100644 0000000... 13a9642... A	metro.config.js
+:000000 100644 0000000... 77e85be... A	package-lock.json
+:000000 100644 0000000... 1a1ef96... A	package.json
+:000000 100644 0000000... 9fe7778... A	tsconfig.json
