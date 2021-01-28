@@ -1,12 +1,9 @@
-/**
- * @format
- */
-
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from '../App';
+import Search from '../Components/Search';
 
 it('renders correctly', () => {
-  renderer.create(<App />);
+  const tree = renderer.create(<Search />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
