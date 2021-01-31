@@ -18,18 +18,18 @@ export default function AmiiboItem(props : {amiibo : AmiiboLayout}) {
     const amiibo : AmiiboLayout = props.amiibo;
 
     return (
-        <View style={styles.main_container}>
+        <View style={styles.mainContainer}>
             <Image style={styles.image} source={{uri: amiibo.image}} />
-            <View style={styles.content_container}>
-                <View style={styles.title_container}>
-                    <Text style={styles.title_text}>{amiibo.name}</Text>
-                    <Text style={styles.amiibo_series}>{amiibo.amiiboSeries}</Text>
+            <View style={styles.contentContainer}>
+                <View style={styles.titleContainer}>
+                    <Text style={styles.titleText}>{amiibo.name}</Text>
+                    <Text style={styles.amiiboSeries}>{amiibo.amiiboSeries}</Text>
                 </View>
-                <View style={styles.description_container}>
-                    <Text style={styles.description_text}>{amiibo.character} from {amiibo.gameSeries} game series !</Text>
+                <View style={styles.descriptionContainer}>
+                    <Text style={styles.descriptionText}>{amiibo.character} from {amiibo.gameSeries} game series !</Text>
                 </View>
-                <View style={styles.release_container}>
-                    <Text style={styles.release_text}>Release date (eu) : {amiibo.release_eu}</Text>
+                <View style={styles.releaseContainer}>
+                    <Text style={styles.releaseText}>Release date (eu) : {amiibo.release_eu}</Text>
                 </View>
             </View>
         </View>
@@ -37,7 +37,7 @@ export default function AmiiboItem(props : {amiibo : AmiiboLayout}) {
 }
 
 const styles = StyleSheet.create({
-    main_container: {
+    mainContainer: {
         height: 160,
         flex: 1,
         flexDirection: 'row',
@@ -48,42 +48,42 @@ const styles = StyleSheet.create({
         height: 150,
         width: 90,
     },
-    content_container: {
+    contentContainer: {
         flex: 1,
         margin: 10,
     },
-    title_container: {
+    titleContainer: {
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'flex-start',
         flexWrap: 'wrap',
         alignContent: 'flex-start',
     },
-    title_text: {
+    titleText: {
         fontSize: 30,
         fontWeight: 'bold',
         marginRight: 10,
         textAlignVertical: 'bottom',
     },
-    amiibo_series: {
+    amiiboSeries: {
         fontSize: 20,
         fontStyle: 'italic',
         marginBottom: 3,
         textAlignVertical: 'bottom',
     },
-    description_container: {
+    descriptionContainer: {
         flex : 1,
         justifyContent: 'center',
     },
-    description_text: {
+    descriptionText: {
         fontSize: 17,
     },
-    release_container: {
+    releaseContainer: {
         flex: 0.5,
         justifyContent: 'flex-end',
         alignItems: 'flex-end',
     },
-    release_text: {
+    releaseText: {
         fontSize: 16,
     },
 });

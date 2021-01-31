@@ -8,7 +8,7 @@ import { amiiboList } from '../Helpers/amiibosData';
 
 export default function Search() {
   return (
-    <View style={styles.main_container} >
+    <View style={styles.mainContainer} >
         <TextInput style={styles.textinput} placeholder="Nom de l'Amiibo"/>
         <Button title="Rechercher" onPress={() => {}}/>
         <FlatList
@@ -21,7 +21,7 @@ export default function Search() {
 }
 
 const styles = StyleSheet.create({
-    main_container: {
+    mainContainer: {
       flex: 1,
         marginTop: 20,
     },
