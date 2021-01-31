@@ -14,7 +14,7 @@ interface AmiiboLayout {
     release_eu: string;
 }
 
-export default function AmiiboItem(props : any) {
+export default function AmiiboItem(props : {amiibo : AmiiboLayout}) {
     const amiibo : AmiiboLayout = props.amiibo;
 
     return (
