@@ -4,17 +4,17 @@
 import React from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 
-export default function AmiiboItem(props : any) {
-    interface AmiiboLayout {
-        id: string;
-        amiiboSeries: string;
-        character: string;
-        gameSeries: string;
-        name: string;
-        image: string;
-        release_eu: string;
-    }
+interface AmiiboLayout {
+    id: string;
+    amiiboSeries: string;
+    character: string;
+    gameSeries: string;
+    name: string;
+    image: string;
+    release_eu: string;
+}
 
+export default function AmiiboItem(props : any) {
     const amiibo : AmiiboLayout = props.amiibo;
 
     return (
