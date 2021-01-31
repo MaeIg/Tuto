@@ -11,7 +11,7 @@ interface AmiiboLayout {
     release_eu: string;
 }
 
-const data : AmiiboLayout[] = [
+export const amiiboList : AmiiboLayout[] = [
     {
         id: '0000000000340102',
         amiiboSeries: 'Super Mario Bros.',
@@ -49,5 +49,3 @@ const data : AmiiboLayout[] = [
         release_eu: '2015-03-20',
     },
 ];
-
-export default data;

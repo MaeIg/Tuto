@@ -4,7 +4,7 @@
 import React from 'react';
 import { StyleSheet, View, TextInput, Button, FlatList } from 'react-native';
 import AmiiboItem from './AmiiboItem';
-import amiibos from '../Helpers/amiibosData';
+import { amiiboList } from '../Helpers/amiibosData';
 
 export default function Search() {
   return (
@@ -12,7 +12,7 @@ export default function Search() {
         <TextInput style={styles.textinput} placeholder="Nom de l'Amiibo"/>
         <Button title="Rechercher" onPress={() => {}}/>
         <FlatList
-          data={amiibos}
+          data={amiiboList}
           keyExtractor={(item) => item.id}
           renderItem={({item}) => <AmiiboItem amiibo={item} />}
         />
