@@ -2,19 +2,27 @@
 // Components/Search.tsx
 
 import React from 'react';
-import { View, TextInput, Button, StyleSheet } from 'react-native';
+import { StyleSheet, View, TextInput, Button, FlatList } from 'react-native';
+import AmiiboItem from './AmiiboItem';
+import { amiiboList } from '../Helpers/amiibosData';
 
 export default function Search() {
   return (
-    <View style={styles.globalView} >
+    <View style={styles.mainContainer} >
         <TextInput style={styles.textinput} placeholder="Nom de l'Amiibo"/>
         <Button title="Rechercher" onPress={() => {}}/>
+        <FlatList
+          data={amiiboList}
+          keyExtractor={(item) => item.id}
+          renderItem={({item}) => <AmiiboItem amiibo={item} />}
+        />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-    globalView: {
+    mainContainer: {
+      flex: 1,
         marginTop: 20,
     },
     textinput: {
