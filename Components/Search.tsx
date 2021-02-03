@@ -1,19 +1,36 @@
 /* eslint-disable prettier/prettier */
 // Components/Search.tsx
 
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, Button, FlatList } from 'react-native';
-import AmiiboItem from './AmiiboItem';
-import { amiiboList } from '../Helpers/amiibosData';
+import AmiiboItem, { AmiiboLayout } from './AmiiboItem';
+import { getAmiiboWithSearchedCharacter } from '../API/AmiiboAPI';
 
 export default function Search() {
+  const [amiibos, setAmiibos] : [AmiiboLayout[], any] = useState([]);
+
+  let searchText : string = '';
+
+  function loadAmiibos () {
+    getAmiiboWithSearchedCharacter(searchText).then(data => {
+      setAmiibos(data.amiibo);
+    });
+  }
+
   return (
     <View style={styles.mainContainer} >
-        <TextInput style={styles.textinput} placeholder="Nom de l'Amiibo"/>
-        <Button title="Rechercher" onPress={() => {}}/>
+        <TextInput
+          style={styles.textinput}
+          placeholder="Nom de l'Amiibo"
+          onChangeText={(text) => { searchText = text; }}
+        />
+        <Button
+          title="Rechercher"
+          onPress={() => { loadAmiibos(); }}
+        />
         <FlatList
-          data={amiiboList}
-          keyExtractor={(item) => item.id}
+          data={amiibos}
+          keyExtractor={(item) => item.head + item.tail}
           renderItem={({item}) => <AmiiboItem amiibo={item} />}
         />
     </View>

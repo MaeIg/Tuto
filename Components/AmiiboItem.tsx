@@ -4,14 +4,15 @@
 import React from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 
-interface AmiiboLayout {
-    id: string;
+export interface AmiiboLayout {
+    head: string;
+    tail: string;
     amiiboSeries: string;
     character: string;
     gameSeries: string;
     name: string;
     image: string;
-    release_eu: string;
+    release: { eu : string };
 }
 
 export default function AmiiboItem(props : {amiibo : AmiiboLayout}) {
@@ -29,7 +30,7 @@ export default function AmiiboItem(props : {amiibo : AmiiboLayout}) {
                     <Text style={styles.descriptionText}>{amiibo.character} from {amiibo.gameSeries} game series !</Text>
                 </View>
                 <View style={styles.releaseContainer}>
-                    <Text style={styles.releaseText}>Release date (eu) : {amiibo.release_eu}</Text>
+                    <Text style={styles.releaseText}>Release date (eu) : {amiibo.release.eu}</Text>
                 </View>
             </View>
         </View>
