@@ -7,7 +7,7 @@ import AmiiboItem, { AmiiboLayout } from './AmiiboItem';
 import { getAmiiboWithSearchedCharacter } from '../API/AmiiboAPI';
 
 export default function Search() {
-  const [amiibos, setAmiibos] : [AmiiboLayout[], any] = useState([]);
+  const [amiibos, setAmiibos] = useState<AmiiboLayout[]>([]);
 
   let searchText : string = '';
 
