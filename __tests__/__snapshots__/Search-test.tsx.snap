@@ -12,6 +12,7 @@ exports[`Search renders correctly 1`] = `
   <TextInput
     allowFontScaling={true}
     onChangeText={[Function]}
+    onSubmitEditing={[Function]}
     placeholder="Nom de l'Amiibo"
     rejectResponderTermination={true}
     style={

@@ -27,6 +27,7 @@ export default function Search() {
           style={styles.textinput}
           placeholder="Nom de l'Amiibo"
           onChangeText={(text) => { searchText = text; }}
+          onSubmitEditing={() => { loadAmiibos(); }}
         />
         <Button
           title="Rechercher"
