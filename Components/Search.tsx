@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, Button, FlatList } from 'react-native';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import AmiiboItem, { AmiiboLayout } from './AmiiboItem';
 import { getAmiiboWithSearchedCharacter } from '../API/AmiiboAPI';
 
@@ -11,11 +12,14 @@ export default function Search() {
 
   let searchText : string = '';
 
-  function loadAmiibos () {
-    getAmiiboWithSearchedCharacter(searchText).then(data => {
+  const loadAmiibos = async () : Promise<void> => {
+    try {
+      const data : { amiibo: AmiiboLayout[] } = await getAmiiboWithSearchedCharacter(searchText);
       setAmiibos(data.amiibo);
-    });
-  }
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <View style={styles.mainContainer} >

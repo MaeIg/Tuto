@@ -1,9 +1,8 @@
 /* eslint-disable prettier/prettier */
 
-export const getAmiiboWithSearchedCharacter = (amiiboCharacter : string) => {
+export const getAmiiboWithSearchedCharacter = async (amiiboCharacter : string) : Promise<any> => {
     const url : string = `https://www.amiiboapi.com/api/amiibo/?character=${amiiboCharacter}`;
 
-    return fetch(url)
-        .then((response) => response.json())
-        .catch((error) => console.error(error));
+    const response : Response = await fetch(url);
+    return await response.json();
 };
