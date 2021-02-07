@@ -24,7 +24,7 @@ export default function Search() {
     }
   };
 
-  const displayAmiibos = () : JSX.Element => {
+  const AmiibosList = () : JSX.Element => {
     if (isLoading) {
       return (
         <View style={styles.activityIndicatorContainer}>
@@ -54,7 +54,7 @@ export default function Search() {
           title="Rechercher"
           onPress={() => { loadAmiibos(); }}
         />
-        { displayAmiibos() }
+        <AmiibosList />
     </View>
   );
 }
