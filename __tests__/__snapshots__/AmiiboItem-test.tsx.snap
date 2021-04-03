@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AmiiboItem renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 160,
+      "marginLeft": 5,
+      "marginTop": 5,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png",
+      }
+    }
+    style={
+      Object {
+        "height": 150,
+        "width": 90,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "margin": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignContent": "flex-start",
+          "flex": 1,
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "flex-start",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "marginRight": 10,
+            "textAlignVertical": "bottom",
+          }
+        }
+      >
+        name
+      </Text>
+      <Text
+        style={
+          Object {
+            "fontSize": 20,
+            "fontStyle": "italic",
+            "marginBottom": 3,
+            "textAlignVertical": "bottom",
+          }
+        }
+      >
+        amiibo Series
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 17,
+          }
+        }
+      >
+        character
+         from 
+        game series
+         game series !
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flex": 0.5,
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 16,
+          }
+        }
+      >
+        Release date (eu) : 
+        2020-03-12
+      </Text>
+    </View>
+  </View>
+</View>
+`;
