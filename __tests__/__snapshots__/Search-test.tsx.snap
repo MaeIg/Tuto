@@ -5,13 +5,13 @@ exports[`Search renders correctly 1`] = `
   style={
     Object {
       "flex": 1,
-      "marginTop": 20,
     }
   }
 >
   <TextInput
     allowFontScaling={true}
     onChangeText={[Function]}
+    onSubmitEditing={[Function]}
     placeholder="Nom de l'Amiibo"
     rejectResponderTermination={true}
     style={
